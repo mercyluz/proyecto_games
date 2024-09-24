@@ -6,15 +6,17 @@ public class Adivina_numero {
     public static void main(String[] args) {
 
         String opcion_jugar = "1";
-
+// mientras que la variable jugar es 1 se ejecutar el programa
         while (opcion_jugar.equals("1")) {
+           // el programa calcula el numero secreto
             Random random = new Random();
             int random_number = random.nextInt(100)+1;
-
+// inicializando el contador de intentos
             int counter = 0;
-
+// envio de mensaje 
             String num = JOptionPane.showInputDialog("Estoy pensando un número entre el 1 y el 100. \r\n" + "Intenta adivinarlo!!");
-            int user_number = Integer.parseInt(num);
+            int user_number = Integer.parseInt(num); // el string del mensaje se convierte en int para poder compararlo
+            //ponemos la condicion de validar numeros entre 0 y 100
             if (user_number >100 || user_number < 1){
                 JOptionPane.showMessageDialog(null,"El numero que has introducido esta fuera del rango de 1 y 100. \r\n" + "Intente denuevo");
             }
