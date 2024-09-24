@@ -15,7 +15,10 @@ public class Adivina_numero {
 
             String num = JOptionPane.showInputDialog("Estoy pensando un número entre el 1 y el 100. \r\n" + "Intenta adivinarlo!!");
             int user_number = Integer.parseInt(num);
-
+            if (user_number >100 || user_number < 1){
+                JOptionPane.showMessageDialog(null,"El numero que has introducido esta fuera del rango de 1 y 100. \r\n" + "Intente denuevo");
+            }
+            else {
             while (random_number != user_number) {
                 counter = counter+1;
 
@@ -35,6 +38,6 @@ public class Adivina_numero {
             opcion_jugar = JOptionPane.showInputDialog("Quieres jugar de nuevo? \r\n" + "Sí -- Escribe: 1\r\n" + "No -- Pulsa OK\r\n" );
                 
         }
-
+    }
     }
 }
