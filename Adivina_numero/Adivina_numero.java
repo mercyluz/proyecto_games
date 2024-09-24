@@ -32,7 +32,7 @@ public class Adivina_numero {
 
             JOptionPane.showMessageDialog(null, random_number + " -- Enhorabuena!! Lo has adivinado en " + counter + " intentos.");
 
-            opcion_jugar = JOptionPane.showInputDialog("Quieres jugar de nuevo? \r\n" + "Sí -- Escribe: 1\r\n" + "No -- Escribe: 2\r\n" );
+            opcion_jugar = JOptionPane.showInputDialog("Quieres jugar de nuevo? \r\n" + "Sí -- Escribe: 1\r\n" + "No -- Pulsa OK\r\n" );
                 
         }
 
