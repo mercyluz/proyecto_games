@@ -1,11 +1,11 @@
 
 # Procedimiento de juego del ahorcado
 
-<li>1.- El programa selecciona al azar una palabra dentro de un listado.</li>
+<li>El programa selecciona al azar una palabra dentro de un listado.</li>
 
-2.- EL jugador tiene que adivina la palabra elegida (animal).
-3.- Se tiene 8 intentos para acertar.
-4.- Si aciertas va apareciendo la palabra elegida dentro del formato
+<li>EL jugador tiene que adivina la palabra elegida (animal).</li>
+<li>Se tiene 8 intentos para acertar.</li>
+<li>Si aciertas va apareciendo la palabra elegida dentro del formato</li>
 _ _ _ _ o _ 
 
 Dime una letra:
