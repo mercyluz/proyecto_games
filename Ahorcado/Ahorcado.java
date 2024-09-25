@@ -7,7 +7,7 @@ public class Ahorcado {
     public static void main(String[] args) {
         
         
-        String[] lista_palabras={"perro", "gato", "canario", "cobaya", "conejo", "tigre", "serpiente"}; // Creamos array con lista de palabras.
+        String[] lista_palabras={"perro", "gato", "canario", "cobaya", "conejo", "tigre", "serpiente", "caballo"}; // Creamos array con lista de palabras.
         String palabra_elegida = "";    // Variable que guarda la palabra aleatoriamente elegida por el programa para se adivinada por el jugador.
         int random_posicion;    // Es la posición numérica de la lista de palabras que define a la palabra elegida.
         int intentosMaximos = 8;    // Variable que define el número de intentos máximos que tendrá el jugador para adivinar la palabra.
@@ -75,21 +75,21 @@ public class Ahorcado {
                 
                 System.out.println(palabra_oculta);
                 switch(Integer. toString(countIntentos)) {
-                    case "1": System.out.println("Poste");
+                    case "1": System.out.println("\r\n  |    \r\n  |    \r\n  |   \r\n  |  \r\n  | \r\n ---------");
                     break;
-                    case "2": System.out.println("Cuerda");
+                    case "2": System.out.println("\r\n  ______\r\n  |   | \r\n  |     \r\n  |   \r\n  |   \r\n  | \r\n ---------");
                     break;
-                    case "3": System.out.println("Cabeza");
+                    case "3": System.out.println("\r\n  ______\r\n  |   | \r\n  |   O \r\n  |   \r\n  |   \r\n  | \r\n ---------");
                     break;
-                    case "4": System.out.println("Tronco");
+                    case "4": System.out.println("\r\n  ______\r\n  |   | \r\n  |   O \r\n  |   | \r\n  |   \r\n  | \r\n ---------");
                     break;
-                    case "5": System.out.println("Brazo derecho");
+                    case "5": System.out.println("\r\n  ______\r\n  |   | \r\n  |   O \r\n  |  \\| \r\n  |   \r\n  | \r\n ---------");
                     break;
-                    case "6": System.out.println("Brazo izquierdo");
+                    case "6": System.out.println("\r\n  ______\r\n  |   | \r\n  |   O \r\n  |  \\|/ \r\n  |   \r\n  | \r\n ---------");
                     break;
-                    case "7": System.out.println("Pierna izquierda");
+                    case "7": System.out.println("\r\n  ______\r\n  |   | \r\n  |   O \r\n  |  \\|/ \r\n  |  /  \r\n  | \r\n ---------");
                     break;
-                    case "8": System.out.println("Pierna derecha" + "\r\nAhorcado!");
+                    case "8": System.out.println("\r\n  ______\r\n  |   | \r\n  |   O \r\n  |  \\|/ \r\n  |  / \\ \r\n  | \r\n ---------");
                     break;
                 }
             }
@@ -97,7 +97,7 @@ public class Ahorcado {
         }
 
         if (countIntentos == intentosMaximos){
-            System.out.println("\r\n-- GAME OVER --");
+            System.out.println("\r\n-- GAME OVER --" + "\r\n La palabra era: " + palabra_elegida);
 
         }
 
