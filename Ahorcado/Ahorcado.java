@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ahorcado {
     
     public static void main(String[] args) {
-
+       
         
         String[] lista_palabras={"perro", "gato", "canario", "cobaya"}; // Creamos array con lista de palabras.
         String palabra_elegida = "";    // Variable que guarda la palabra aleatoriamente elegida por el programa para se adivinada por el jugador.
@@ -13,7 +13,7 @@ public class Ahorcado {
         int intentosMaximos = 6;    // Variable que define el número de intentos máximos que tendrá el jugador para adivinar la palabra.
         int countIntentos = 0;  // Se inicia la variable que contabiliza el número de intentos utilizados por el jugador.
         ArrayList<Character> palabra_oculta = new ArrayList<Character>(); // Array donde se guardará la palabra oculta al jugador.
-
+        boolean win = false;
         // El programa selecciona una palabra de la lista al azar.
         // Esta palabra corresponde con una posición del array "lista_palabras"
         Random random = new Random();
@@ -32,7 +32,7 @@ public class Ahorcado {
 
         
         
-        while (countIntentos < intentosMaximos) {
+        while (countIntentos < intentosMaximos && win == false) {
 
             System.out.println("\r\n");
             System.out.println("Dime una letra");
@@ -53,9 +53,16 @@ public class Ahorcado {
                 countIntentos ++;
                 System.out.println("Letra erronea. Te quedan "+ (intentosMaximos-countIntentos)+ " intentos");
             }
+            if (String.valueOf(palabra_oculta).equals(palabra_elegida)){
+                System.out.println(String.valueOf(palabra_oculta)); 
+                 win= true;
+                
+
+            }
             System.out.println(palabra_oculta);
+
         }
-        
+        System.out.println("CONGRATULATIONS YOU'VE WON");
         scanner.close();
             
         }
