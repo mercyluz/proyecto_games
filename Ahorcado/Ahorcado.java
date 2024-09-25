@@ -30,20 +30,16 @@ public class Ahorcado {
         System.out.println("\r\n");
         System.out.println("Dime una letra");
         String letra = scanner.nextLine();
-
-
-        // letra = Character.toString();
-        // char letra = Character.toLowerCase(scanner.next().carAt(0));
+        String letra_low = letra.toLowerCase();
 
         
-            
-        
-        // for (int i = 0; i < palabra_elegida.length(); i++){
+        for (int i = 0; i < palabra_elegida.length(); i++){
 
-        //     if(letra == Character.toString(palabra_elegida.charAt(i))){
-
-        //     }
-        // }
+            if(letra_low == Character.toString(palabra_elegida.charAt(i))){
+                
+                palabra_elegida = palabra_elegida.replace(palabra_elegida.charAt(i), letra_low.charAt(0));
+            }
+        }
             
 
 
