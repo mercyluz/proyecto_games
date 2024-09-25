@@ -30,9 +30,9 @@ public class Ahorcado {
             System.out.print("__ ");
         }
 
-       
         
-          while (countIntentos <= intentosMaximos) {
+        
+        while (countIntentos < intentosMaximos) {
 
             System.out.println("\r\n");
             System.out.println("Dime una letra");
@@ -43,7 +43,7 @@ public class Ahorcado {
             for (int i = 0; i < palabra_elegida.length(); i++){
                 //para comparar string se utiliza equals
                 if(letra_low.equals(Character.toString(palabra_elegida.charAt(i)))){
-                  
+                
                     palabra_oculta.set(i,letra_low.charAt(0));
                     letracorrecta = true;
                 }
@@ -51,20 +51,14 @@ public class Ahorcado {
             }
             if (!letracorrecta){
                 countIntentos ++;
-                System.out.println("palabra erroneas Te quedan"+ (intentosMaximos-countIntentos)+ "intentos");
-            }
-
-            
-           //if(!letra_low.equals(Character.toString(palabra_elegida.charAt(i)))){
-              //  countIntentos= countIntentos +1;
-                //System.out.println("La palabra no contiene esa letra");
+                System.out.println("Letra erronea. Te quedan "+ (intentosMaximos-countIntentos)+ " intentos");
             }
             System.out.println(palabra_oculta);
-           
-            System.out.println(countIntentos);
-            scanner.close();
- 
-          }
-          
-   }
+        }
+        
+        scanner.close();
+            
+        }
+        
+    }
 
