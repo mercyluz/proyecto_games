@@ -1,9 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-<<<<<<< HEAD
 
-=======
->>>>>>> 910d0d6b8bd58cb412e0e9a53a01eacc6498787f
 public class Ahorcado {
     
     public static void main(String[] args) {
@@ -25,6 +22,12 @@ public class Ahorcado {
 
         Scanner scanner = new Scanner(System.in);
         
+        System.out.println("La palabra que estoy pensando tiene " + palabra_elegida.length() + " letras");
+        
+        for (int i = 0; i < palabra_elegida.length(); i++){
+            System.out.print("__ ");
+        }
+        System.out.println("\r\n");
         System.out.println("Dime una letra");
         String letra = scanner.nextLine();
 
@@ -32,15 +35,18 @@ public class Ahorcado {
         // letra = Character.toString();
         // char letra = Character.toLowerCase(scanner.next().carAt(0));
 
-        for (int i = 0; i < palabra_elegida.length(); i++){
+        
+            
+        
+        // for (int i = 0; i < palabra_elegida.length(); i++){
 
-            if(letra == Character.toString(palabra_elegida.charAt(i))){
+        //     if(letra == Character.toString(palabra_elegida.charAt(i))){
 
-            }
-        }
+        //     }
+        // }
             
 
-        
+
         scanner.close();
     }
 }
