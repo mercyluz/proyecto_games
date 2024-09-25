@@ -66,10 +66,17 @@ public class Ahorcado {
                 win= true;
                 System.out.println("CONGRATULATIONS YOU'VE WON");
             }
-            System.out.println(palabra_oculta);
-
+            
+            
+            else {
+                System.out.println(" intentalo de nuevo");
+                System.out.println(palabra_oculta);
+           }
+         if (countIntentos <=0){
+            System.out.println("your lose");
+           
+         }
         }
-        
         scanner.close();
             
         }
