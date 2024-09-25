@@ -30,23 +30,35 @@ public class Ahorcado {
             System.out.print("__ ");
         }
 
-        System.out.println("\r\n");
-        System.out.println("Dime una letra");
-        String letra = scanner.nextLine();
-        String letra_low = letra.toLowerCase();
-
+       
         
-        for (int i = 0; i < palabra_elegida.length(); i++){
+          while (countIntentos <= intentosMaximos) {
 
-            if(letra_low == Character.toString(palabra_elegida.charAt(i))){
-                
-                palabra_oculta.set(i, Character.toString(letra_low.charAt(i)));
-                
-            }
-        }
+            System.out.println("\r\n");
+            System.out.println("Dime una letra");
+            String letra = scanner.nextLine();
+            String letra_low = letra.toLowerCase();
+    
             
+            for (int i = 0; i < palabra_elegida.length(); i++){
+                //para comparar string se utiliza equals
+                if(letra_low.equals(Character.toString(palabra_elegida.charAt(i)))){
+                  
+                    palabra_oculta.set(i,letra_low.charAt(0));
+                }
+                
+    
+            }
+            if(!letra_low.equals(Character.toString(palabra_elegida.charAt(i)))){
+                countIntentos= countIntentos +1;
+                System.out.println("La palabra no contiene esa letra");
+            }
+            System.out.println(palabra_oculta);
+           
+            System.out.println(countIntentos);
 
-
+          }
+          
         scanner.close();
     }
 }
