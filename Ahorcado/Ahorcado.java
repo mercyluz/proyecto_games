@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ahorcado {
     
     public static void main(String[] args) {
-       
+        
         
         String[] lista_palabras={"perro", "gato", "canario", "cobaya"}; // Creamos array con lista de palabras.
         String palabra_elegida = "";    // Variable que guarda la palabra aleatoriamente elegida por el programa para se adivinada por el jugador.
@@ -20,6 +20,12 @@ public class Ahorcado {
         random_posicion = random.nextInt(lista_palabras.length);
 
         palabra_elegida = lista_palabras[random_posicion];
+        
+        
+        ArrayList<Character> palabra_elegida_array = new ArrayList<Character>();
+        for(int i=0; i<palabra_elegida.length(); i++){
+            palabra_elegida_array.add(palabra_elegida.charAt(i));
+        }
 
         Scanner scanner = new Scanner(System.in);
         
@@ -30,7 +36,6 @@ public class Ahorcado {
             System.out.print("__ ");
         }
 
-        
         
         while (countIntentos < intentosMaximos && win == false) {
 
@@ -46,6 +51,7 @@ public class Ahorcado {
                 
                     palabra_oculta.set(i,letra_low.charAt(0));
                     letracorrecta = true;
+                    
                 }
                 
             }
@@ -53,16 +59,17 @@ public class Ahorcado {
                 countIntentos ++;
                 System.out.println("Letra erronea. Te quedan "+ (intentosMaximos-countIntentos)+ " intentos");
             }
-            if (String.valueOf(palabra_oculta).equals(palabra_elegida)){
-                System.out.println(String.valueOf(palabra_oculta)); 
-                 win= true;
-                
 
+            System.out.println();
+
+            if ( palabra_oculta.equals(palabra_elegida_array)){
+                win= true;
+                System.out.println("CONGRATULATIONS YOU'VE WON");
             }
             System.out.println(palabra_oculta);
 
         }
-        System.out.println("CONGRATULATIONS YOU'VE WON");
+        
         scanner.close();
             
         }
