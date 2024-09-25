@@ -74,6 +74,24 @@ public class Ahorcado {
             else {
                 
                 System.out.println(palabra_oculta);
+                switch(Integer. toString(countIntentos)) {
+                    case "1": System.out.println("Poste");
+                    break;
+                    case "2": System.out.println("Cuerda");
+                    break;
+                    case "3": System.out.println("Cabeza");
+                    break;
+                    case "4": System.out.println("Tronco");
+                    break;
+                    case "5": System.out.println("Brazo derecho");
+                    break;
+                    case "6": System.out.println("Brazo izquierdo");
+                    break;
+                    case "7": System.out.println("Pierna izquierda");
+                    break;
+                    case "8": System.out.println("Pierna derecha" + "\r\nAhorcado!");
+                    break;
+                }
             }
 
         }
@@ -88,4 +106,5 @@ public class Ahorcado {
         }
         
     }
+
 
