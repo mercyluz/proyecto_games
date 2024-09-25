@@ -1,6 +1,9 @@
 import java.util.Random;
 import java.util.Scanner;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 910d0d6b8bd58cb412e0e9a53a01eacc6498787f
 public class Ahorcado {
     
     public static void main(String[] args) {
@@ -37,6 +40,7 @@ public class Ahorcado {
         }
             
 
+        
         scanner.close();
     }
 }
