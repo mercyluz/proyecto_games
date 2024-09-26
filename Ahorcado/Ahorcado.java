@@ -21,7 +21,7 @@ public class Ahorcado {
 
         palabra_elegida = lista_palabras[random_posicion];
         
-        
+        //transformando la palabra elegida en un array list para compararlo con otro array
         ArrayList<Character> palabra_elegida_array = new ArrayList<Character>();
         for(int i=0; i<palabra_elegida.length(); i++){
             palabra_elegida_array.add(palabra_elegida.charAt(i));
@@ -31,13 +31,14 @@ public class Ahorcado {
         
         System.out.println("");
         System.out.println("La palabra que estoy pensando es un animal y tiene " + palabra_elegida.length() + " letras");
+        // cuando presentass la palabra elegida de manera oculta
         
         for (int i = 0; i < palabra_elegida.length(); i++){
             palabra_oculta.add('_');
             System.out.print("_ ");
         }
-
-        
+        // se inicia el bucle principal del programa
+       
         while (countIntentos < intentosMaximos && salir == false) {
 
             System.out.println("\r\n");
@@ -56,6 +57,7 @@ public class Ahorcado {
                 }
                 
             }
+             // mientras no aciertes con la letra se sigue ejecutando el bucle y el contador aumenta
             if (!letracorrecta){
                 countIntentos = countIntentos +1;
                 System.out.println("Letra erronea. Te quedan "+ (intentosMaximos-countIntentos)+ " intentos.");
@@ -72,7 +74,7 @@ public class Ahorcado {
             }
             
             else {
-                
+                //mientras se comentan errores se va dibujando el muñeco hasta gastar todos los intentos
                 System.out.println(palabra_oculta);
                 switch(Integer. toString(countIntentos)) {
                     case "1": System.out.println("\r\n  |    \r\n  |    \r\n  |   \r\n  |  \r\n  | \r\n ---------");
@@ -95,7 +97,7 @@ public class Ahorcado {
             }
 
         }
-
+        //cuando consumes todos tus intentos
         if (countIntentos == intentosMaximos){
             System.out.println("\r\n-- GAME OVER --" + "\r\n La palabra era: " + palabra_elegida);
 
