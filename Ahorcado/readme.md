@@ -1,7 +1,7 @@
 
 # Juego del ahorcado
 
-![](https://github.com/mercyluz/proyecto_games/blob/feature/Ahorcado/Ahorcado/jec-ahorcado.png))
+
 
 # Descripción
 <li>El programa selecciona al azar una palabra dentro de un listado.</li>
