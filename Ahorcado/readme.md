@@ -2,9 +2,9 @@
 # Juego del ahorcado
 
 ![](https://github.com/mercyluz/proyecto_games/blob/feature/Ahorcado/Ahorcado/jec-ahorcado.png))
-<li>El programa selecciona al azar una palabra dentro de un listado.</li>
 
 # Descripción
+<li>El programa selecciona al azar una palabra dentro de un listado.</li>
 <li>EL jugador tiene que adivina la palabra elegida (animal).</li>
 <li>Se tiene 8 intentos para acertar.</li>
 <li>Si aciertas va apareciendo la palabra elegida dentro del formato</li>
@@ -17,7 +17,7 @@ Dime una letra:
 
 
 
-![](https://appletenhtml.blogspot.com/2014/08/el-ahorcado-java.html)
+![](https://github.com/mercyluz/mercyluz/blob/imagen/ahorcados.png))
     
 Letra erronea. Te quedan 0 intentos.
 
