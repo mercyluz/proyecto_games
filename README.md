@@ -18,7 +18,7 @@ Dime una letra:
 
 
 
-![](https://github.com/mercyluz/mercyluz/blob/imagen/ahorcados.png))
+![](https://github.com/mercyluz/mercyluz/blob/imagen/ahorcados.png)
     
 Letra erronea. Te quedan 0 intentos.
 
