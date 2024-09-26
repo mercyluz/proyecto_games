@@ -1,13 +1,14 @@
 
-# Procedimiento de juego del ahorcado
+# Juego del ahorcado
 
-![](Ahorcado/jec-ahorcado.png)
+![](https://github.com/mercyluz/proyecto_games/blob/feature/Ahorcado/Ahorcado/jec-ahorcado.png))
 <li>El programa selecciona al azar una palabra dentro de un listado.</li>
 
+# Descripción
 <li>EL jugador tiene que adivina la palabra elegida (animal).</li>
 <li>Se tiene 8 intentos para acertar.</li>
 <li>Si aciertas va apareciendo la palabra elegida dentro del formato</li>
-
+<li>Ejemplo:</li>
 _ _ _ _ o _ 
 
 Dime una letra:
@@ -16,17 +17,20 @@ Dime una letra:
 
 
 
-
+![](https://appletenhtml.blogspot.com/2014/08/el-ahorcado-java.html)
     
 Letra erronea. Te quedan 0 intentos.
 
 <li>Si pierdes aparece la palabra elegida.</li>
 <li> Termina el juego
 
-## algunos comandos utilizados para elegir la palabra aleatoria dentro de la lista
+## Algunos comandos utilizados para elegir la palabra aleatoria dentro de la lista
 
     Random random = new Random();
         random_posicion = random.nextInt(lista_palabras.length);
+        
+### Enlaces de interes
 
+`<link>` : <(https://jmjinformatico.es/juego-del-ahorcado-en-java/#:~:text=En%20este%20art%C3%ADculo%20vamos%20a%20sumergirnos)><br>
 
-
+`<link>` : <(https://github.com/nandirey/java-juego-ahorcado/blob/master/README.md)>
