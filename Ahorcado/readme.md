@@ -15,9 +15,10 @@ Dime una letra:
 
 <li>Mientras no aciertes se va dibujando un poco a poco un dibujo hasta llegar
 
+<p align ="center">
 
-
-![](https://github.com/mercyluz/mercyluz/blob/imagen/ahorcados.png)
+<img src="https://github.com/mercyluz/mercyluz/blob/imagen/ahorcados.png"/>
+</p>
     
 Letra erronea. Te quedan 0 intentos.
 
