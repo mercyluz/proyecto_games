@@ -1,6 +1,7 @@
 
 # Procedimiento de juego del ahorcado
 
+![](images/you-picture.png)
 <li>El programa selecciona al azar una palabra dentro de un listado.</li>
 
 <li>EL jugador tiene que adivina la palabra elegida (animal).</li>
