@@ -3,6 +3,7 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 public class Adivina_numero {
+   
     public static void main(String[] args) {
 
         String opcion_jugar = "1";
